@@ -4,7 +4,12 @@ import "./App.css";
 function App() {
 	return (
 		<div className="App">
-			<Router></Router>
+			<Router>
+				<Routes>
+					<Route path="/" />
+					<Route path="*" />
+				</Routes>
+			</Router>
 		</div>
 	);
 }
