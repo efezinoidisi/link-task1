@@ -12,4 +12,4 @@ This is the first task of hng 9 internship
 npm install
 ```
 
-<a href="https://63596bbde9e6f400a2f9f035--linktree-task.netlify.app/" target="_blank"> Live site </a>
+<a href="https://linktree-task.netlify.app/" target="_blank"> Live site </a>
