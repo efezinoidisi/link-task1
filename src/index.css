@@ -21,9 +21,10 @@ body {
 }
 
 .home {
-  width: 100%;
+  width: 80%;
   padding-bottom: 1rem;
   position: relative;
+  margin: 0 auto;
 }
 
 .profile-img {
@@ -31,9 +32,15 @@ body {
   padding-bottom: 2rem;
 }
 
+.profile-img p {
+  visibility: hidden;
+}
+
 #profile__img {
-  width: 5.5rem;
-  padding-bottom: 2rem;
+  width: 88px;
+  border: 5.5px solid #EBE9FE;
+  border-radius: 275px;
+  height: 88px;
 }
 
 .profile-img h2 {
@@ -48,17 +55,26 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-bottom: 1rem;
-}
-
-.link button {
-  width: 90%;
+  cursor: pointer;
   border: 1px solid #EAECF0;
   border-radius: 8px;
   background-color: #EAECF0;
   padding: 1.5rem 2rem;
   font-weight: 500;
   font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.link a:hover {
+  background-color: #D0D5DD;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.link a:focus-visible {
+  border: 1px solid #98A2B3;
+  background-color: #EAECF0;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #EBE9FE;
 }
 
 .share {
@@ -171,7 +187,7 @@ footer {
   }
 
   .error-page {
-    margin: 5% 2%;
+    margin: 0.8% 3%;
   }
 
   .error-links {
@@ -179,14 +195,13 @@ footer {
   }
 
   footer {
-    width: 90%;
-    position: absolute;
-    margin: 0 auto;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 3rem;
-    bottom: 3rem;
+    padding-top: 2rem;
+    margin: 2rem auto 0;
+    border-top: 1px solid #D0D5DD;
   }
 
   footer p {

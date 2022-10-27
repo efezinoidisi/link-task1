@@ -7,7 +7,7 @@ const Social = () => {
 			<a href="/" className="pe-4">
 				<img src={slack} alt="slack icon" width="20px" />
 			</a>
-			<a href="/">
+			<a href="https://github.com/efezinoidisi">
 				<img src={github} alt="github icon" width="20px" />
 			</a>
 		</div>

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import share from "./images/share.svg";
 import hamburger from "./images/mobileShare.svg";
-import "./css/share.css";
 
 const Share = () => {
 	return (

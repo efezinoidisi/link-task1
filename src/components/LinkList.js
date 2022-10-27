@@ -6,7 +6,13 @@ const LinkList = () => {
 	return (
 		<div className="link">
 			{lists.map((list) => (
-				<Link key={list.id} link={list.link} title={list.title} id={list.id} />
+				<Link
+					key={list.id}
+					link={list.link}
+					title={list.title}
+					id={list.id}
+					description={list.description}
+				/>
 			))}
 		</div>
 	);
