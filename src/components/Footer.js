@@ -8,7 +8,7 @@ const Footer = () => {
 		<footer>
 			<Logo src={zuri} alt="zuri logo" />
 			<p>{task}</p>
-			<Logo src={i4g} alt="ingressive for good logo" />
+			<Logo src={i4g} alt="ingressive for good logo" id="i4g" />
 		</footer>
 	);
 };

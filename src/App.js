@@ -7,7 +7,6 @@ import {
 import Home from "./components/Home";
 import Error from "./components/ErrorPage";
 import Footer from "./components/Footer";
-import "./App.css";
 
 function App() {
 	return (
