@@ -4,9 +4,10 @@ import {
 	Route,
 	Navigate,
 } from "react-router-dom";
-import Home from "./components/Home";
-import Error from "./components/ErrorPage";
+import Home from "./Pages/Home";
+import Error from "./Pages/ErrorPage";
 import Footer from "./components/Footer";
+import Contact from "./Pages/Contact";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/home" element={<Navigate to="/" />} />
+					<Route path="/contact" element={<Contact />} />
 					<Route path="*" element={<Error />} />
 				</Routes>
 

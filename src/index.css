@@ -21,7 +21,7 @@ body {
 }
 
 .home {
-  width: 80%;
+  width: 98%;
   padding-bottom: 1rem;
   position: relative;
   margin: 0 auto;
@@ -170,7 +170,7 @@ body {
 }
 
 footer {
-  width: 80%;
+  width: 98%;
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
@@ -179,7 +179,7 @@ footer {
 }
 
 footer img {
-  width: 60%;
+  width: 50%;
   padding-bottom: 1rem;
 }
 
@@ -194,6 +194,8 @@ footer p {
   width: 40%;
 }
 
+
+
 @media screen and (min-width:700px) {
 
   #mobile {
@@ -202,7 +204,7 @@ footer p {
 
   .share {
     text-align: center;
-    padding-left: 40rem;
+    padding-left: 20rem;
   }
 
   #desktop {
@@ -223,6 +225,10 @@ footer p {
 
   .socials img {
     margin-left: 1rem;
+  }
+
+  .home {
+    width: 80%;
   }
 
   .error-page {
@@ -253,5 +259,13 @@ footer p {
 
   #i4g {
     width: 10%;
+  }
+}
+
+
+@media screen and (min-width:1000px) {
+  .share {
+    text-align: center;
+    padding-left: 40rem;
   }
 }

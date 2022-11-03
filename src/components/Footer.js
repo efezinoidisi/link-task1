@@ -1,6 +1,6 @@
 import Logo from "./Logo";
-import zuri from "./images/zuri.svg";
-import i4g from "./images/i4g.svg";
+import zuri from "../images/zuri.svg";
+import i4g from "../images/i4g.svg";
 
 const Footer = () => {
 	const task = "HNG Internship 9 Frontend Task";

@@ -3,19 +3,19 @@ const data = [
 		title: "Twitter",
 		link: "https://twitter.com/_zeetech",
 		id: "twitter",
-		description: "my twitter account",
+		description: "",
 	},
 	{
 		title: "Zuri Team",
 		link: "https://training.zuri.team",
 		id: "btn__zuri",
-		description: "zuri training website",
+		description: "",
 	},
 	{
 		title: "Zuri Books",
 		link: "http://books.zuri.team/",
 		id: "books",
-		description: "This is where you find books about design and coding",
+		description: "",
 	},
 	{
 		title: "Python Books",
