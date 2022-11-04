@@ -4,10 +4,10 @@ import {
 	Route,
 	Navigate,
 } from "react-router-dom";
-import Home from "./Pages/Home";
-import Error from "./Pages/ErrorPage";
+import Home from "./pages/Home";
+import Error from "./pages/ErrorPage";
 import Footer from "./components/Footer";
-import Contact from "./Pages/Contact";
+import Contact from "./pages/Contact";
 
 function App() {
 	return (
