@@ -1,6 +1,6 @@
 import Input from "../components/Input";
 import { useState } from "react";
-import inputs from "../inputs";
+//import inputs from "../inputs";
 import "./css/contact.css";
 
 const Contact = () => {
@@ -8,14 +8,15 @@ const Contact = () => {
 		first_name: "",
 		last_name: "",
 		email: "",
+		message: "",
 	});
 
-	const [message, setMessage] = useState("");
 	const msg = "Send me a message and I'll reply you as soon as possible";
 	const name = "Idisi Efezino";
 
 	const handleChange = (e) => {
 		setValues({ ...values, [e.target.name]: e.target.value });
+		console.log(values);
 	};
 
 	const handleSubmit = (e) => {
@@ -27,7 +28,7 @@ const Contact = () => {
 			<p>Hi there, contact me to ask me about anything you have in mind.</p>
 
 			<form onSubmit={handleSubmit}>
-				{inputs.map((input) => (
+				{/* {inputs.map((input) => (
 					<Input
 						key={input.id}
 						id={input.id}
@@ -38,7 +39,43 @@ const Contact = () => {
 						value={values[input.name]}
 						handleChange={handleChange}
 					/>
-				))}
+				))} */}
+				<div className="form--first-last">
+					<Input
+						type="text"
+						id="first_name"
+						name="first_name"
+						value={values.first_name}
+						handleChange={handleChange}
+						title="form--input"
+						placeholder="Enter your first name"
+						label="First name"
+						groupName="form--firstname"
+					/>
+
+					<Input
+						type="text"
+						id="last_name"
+						name="last_name"
+						value={values.last_name}
+						handleChange={handleChange}
+						title="form--input"
+						placeholder="Enter your last name"
+						label="Last name"
+						groupName="form--lastname"
+					/>
+				</div>
+
+				<Input
+					type="text"
+					id="email"
+					name="email"
+					value={values.email}
+					handleChange={handleChange}
+					title="form--input"
+					placeholder="yourname@email.com"
+					label="Email"
+				/>
 
 				<label htmlFor="message">Message</label>
 				<textarea
@@ -46,16 +83,35 @@ const Contact = () => {
 					id="message"
 					cols="30"
 					rows="5"
-					value={message}
-					onChange={(e) => setMessage(e.target.value)}
+					value={values.message}
+					onChange={(e) => handleChange(e)}
 					placeholder={msg}
+					required
 				></textarea>
-				<div className="confirm">
-					<input type="checkbox" name="confirm" id="confirm" />
-					<label htmlFor="confirm">
+
+				{/* <div className="confirm form-check">
+					<input
+						type="checkbox"
+						name="confirm"
+						id="confirm"
+						className="form-check-input"
+					/>
+					<label htmlFor="confirm" className="form-check-label">
 						You agree to providing your data to {name} who may contact you.
 					</label>
-				</div>
+				</div> */}
+
+				<Input
+					type="checkbox"
+					id="form--consent"
+					title="form-check-input"
+					label={
+						"You agree to providing your data to " +
+						name +
+						" who may contact you."
+					}
+					groupName="confirm"
+				/>
 				<button id="btn__submit">Send message</button>
 			</form>
 		</div>

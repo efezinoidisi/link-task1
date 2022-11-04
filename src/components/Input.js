@@ -6,9 +6,10 @@ const Input = ({
 	label,
 	title,
 	placeholder,
+	groupName,
 }) => {
 	return (
-		<>
+		<div className={groupName}>
 			<label htmlFor={id}>{label}</label>
 			<input
 				type={type}
@@ -19,7 +20,7 @@ const Input = ({
 				className={title}
 				placeholder={placeholder}
 			/>
-		</>
+		</div>
 	);
 };
 
