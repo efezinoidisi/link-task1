@@ -264,6 +264,10 @@ footer p {
 
 
 @media screen and (min-width:1000px) {
+  body {
+    min-height: 100vh;
+  }
+
   .share {
     text-align: center;
     padding-left: 40rem;

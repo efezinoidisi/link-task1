@@ -1,13 +1,23 @@
-const Input = ({ label, type, id, value, handleChange, name }) => {
+const Input = ({
+	type,
+	id,
+	value,
+	handleChange,
+	label,
+	title,
+	placeholder,
+}) => {
 	return (
 		<>
-			<label htmlFor={label}>{name}</label>
+			<label htmlFor={id}>{label}</label>
 			<input
 				type={type}
 				id={id}
-				name={label}
+				name={id}
 				value={value}
 				onChange={(e) => handleChange(e)}
+				className={title}
+				placeholder={placeholder}
 			/>
 		</>
 	);

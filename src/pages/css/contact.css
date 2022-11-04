@@ -1,0 +1,117 @@
+.contact--page {
+    background-color: white;
+    margin: 0 auto 7rem;
+    width: 98%;
+}
+
+.contact--page h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: #101828;
+
+}
+
+.contact--page p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 156%;
+    margin: 1rem 0 3rem;
+    color: #475467;
+}
+
+.contact--page form {
+    /*display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 16px; */
+    width: 100%;
+}
+
+.contact--page .form--input {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    gap: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    margin: 8px 0;
+    color: #475467;
+    font-size: 0.9rem;
+}
+
+.contact--page .form--input:focus-visible {
+    outline: none;
+    border: 1px solid #84CAFF;
+
+}
+
+.contact--page label {
+    font-weight: 500;
+    font-size: 0.89rem;
+    line-height: 143%;
+    color: #344054;
+}
+
+.contact--page textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0.89rem;
+
+    border: 1px solid #D0D5DD;
+
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    margin: 8px 0;
+    color: #475467;
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+.contact--page textarea:focus-visible {
+    outline: none;
+    border: 1px solid #84CAFF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+}
+
+.contact--page .confirm {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 1rem 0 2rem;
+}
+
+.contact--page input[type=checkbox]::marker {
+    font-size: 4rem;
+    color: red;
+}
+
+.contact--page button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #1570EF;
+    border: 1px solid #1570EF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+@media screen and (min-width:800px) {
+    .contact--page {
+        width: 80%;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .contact--page {
+        width: 60%;
+
+    }
+}
