@@ -77,27 +77,21 @@
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
 }
 
-.contact--page span {
-    display: none;
+
+.form--input-message span {
+
+    color: #F83F23;
+    font-weight: 500;
+    font-size: 14px;
 }
 
-/* 
-.contact--page textarea:invalid~span {
-    display: inline;
-} 
-
-.contact--page textarea:invalid:focus-visible {
-    border: 1px solid red;
-}*/
 
 .contact--page .confirm {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 8px;
-
-    margin: 1rem 0 2rem;
+    margin: 1.5rem 0 3rem;
 
 }
 
