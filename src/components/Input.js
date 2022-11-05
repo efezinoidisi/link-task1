@@ -19,6 +19,7 @@ const Input = ({
 				onChange={(e) => handleChange(e)}
 				className={title}
 				placeholder={placeholder}
+				required
 			/>
 		</div>
 	);

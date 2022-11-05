@@ -34,13 +34,12 @@ const Contact = () => {
 	};
 
 	const handleSubmit = (e) => {
-		let data = {};
+		//let data = {};
 		e.preventDefault();
 
 		setErrorMessage(validate(values.message));
 		setIsValidated(true);
-		data = { ...values };
-		console.log(data);
+		//data = { ...values };
 		setValues({
 			first_name: "",
 			last_name: "",
@@ -125,6 +124,7 @@ const Contact = () => {
 						onChange={checkHandler}
 						checked={isChecked}
 						className="form-check-input"
+						required
 					/>
 					<label htmlFor="form--consent" className="form-check-label">
 						You agree to providing your data to {name} who may contact you.
