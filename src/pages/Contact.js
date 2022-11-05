@@ -14,6 +14,7 @@ const Contact = () => {
 	const msg = "Send me a message and I'll reply you as soon as possible";
 	const name = "Idisi Efezino Endurance";
 	const [errorMessage, setErrorMessage] = useState("");
+
 	const [isValidated, setIsValidated] = useState(false);
 
 	const [isChecked, setIsChecked] = useState(false);
@@ -22,14 +23,31 @@ const Contact = () => {
 		setIsChecked(!isChecked);
 	};
 
+	const myStyle = {
+		border: "1px solid #F89687",
+		boxShadow: "0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC",
+		borderRadius: "8px",
+	};
+
 	const handleChange = (e) => {
 		setValues({ ...values, [e.target.name]: e.target.value });
 	};
 
 	const handleSubmit = (e) => {
+		let data = {};
 		e.preventDefault();
+
 		setErrorMessage(validate(values.message));
 		setIsValidated(true);
+		data = { ...values };
+		console.log(data);
+		setValues({
+			first_name: "",
+			last_name: "",
+			email: "",
+			message: "",
+		});
+		checkHandler();
 	};
 
 	const validate = (msg) => {
@@ -94,11 +112,7 @@ const Contact = () => {
 						value={values.message}
 						onChange={(e) => handleChange(e)}
 						placeholder={msg}
-						style={
-							errorMessage && !values.message
-								? { border: "1px solid #F89687" }
-								: {}
-						}
+						style={errorMessage && !values.message ? myStyle : {}}
 					></textarea>
 					<span>{values.message ? null : errorMessage}</span>
 				</div>
