@@ -94,9 +94,13 @@ const Contact = () => {
 						value={values.message}
 						onChange={(e) => handleChange(e)}
 						placeholder={msg}
-						style={errorMessage ? { border: "1px solid #F89687" } : {}}
+						style={
+							errorMessage && !values.message
+								? { border: "1px solid #F89687" }
+								: {}
+						}
 					></textarea>
-					<span>{errorMessage}</span>
+					<span>{values.message ? null : errorMessage}</span>
 				</div>
 
 				<div className="confirm">
