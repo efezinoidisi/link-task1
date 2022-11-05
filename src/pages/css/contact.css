@@ -112,6 +112,7 @@
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: 600;
+    outline: none;
 }
 
 .contact--page button:hover {
